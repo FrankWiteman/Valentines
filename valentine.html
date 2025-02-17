@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .container h1, 
+        .container p {
+            font-family: "Lucida Calligraphy", cursive;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+        .letter {
+            text-align: center;
+            font-family: "Lucida Calligraphy", cursive;
+        }
+        .scroll {
+            background: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Aged paper texture */
+            color: #4B2E2E;
+            padding: 30px;
+            border-radius: 10px;
+            border: 12px solid #8B5A2B; /* Golden-brown frame */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            font-size: 20px;
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            line-height: 1.6;
+            animation: glowing 3s infinite alternate ease-in-out; /* Soft glowing effect */
+        }
+
+        /* Rolled edges effect */
+        .scroll::before,
+        .scroll::after {
+            content: "";
+            position: absolute;
+            width: 85%;
+            height: 30px;
+            background: #8B5A2B;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .scroll::before {
+            top: -15px;
+            box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .scroll::after {
+            bottom: -15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .wax-seal {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .wax-seal img {
+            width: 80px;
+            height: auto;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+            transform: rotate(-5deg);
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            position: absolute;
+            opacity: 0;
+            animation: fadeImages 10s infinite;
+        }
+        img:nth-child(2) { animation-delay: 3s; }
+        img:nth-child(3) { animation-delay: 6s; }
+        img:nth-child(4) { animation-delay: 9s; }
+
+        @keyframes fadeImages {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            30% { opacity: 1; }
+            40% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .heart {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            animation: floatHeart 5s infinite ease-in-out;
+        }
+        @keyframes floatHeart {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @keyframes glowing {
+            0% { box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.3); }
+            100% { box-shadow: 0px 10px 25px rgba(255, 165, 0, 0.6); }
+        }
+        
+        /* Handwritten Style */
+        .scroll p {
+            font-family: "Lucida Calligraphy", cursive;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p>To my love, Le Boo Boo Le Boo Boo</p>
+
+        <!-- Animated Heart and Dots -->
+        <div class="hearts">
+            <span class="heart" style="top: 50px; left: 30%; animation-delay: 0s;">❤️</span>
+            <span class="heart" style="top: 80px; left: 50%; animation-delay: 1s;">💖</span>
+            <span class="heart" style="top: 120px; left: 70%; animation-delay: 2s;">❤️</span>
+            <span class="heart" style="top: 160px; left: 40%; animation-delay: 3s;">💗</span>
+            <span class="heart" style="top: 200px; left: 60%; animation-delay: 4s;">❤️</span>
+        </div>
+
+        <!-- Image Slideshow -->
+        <div class="image-container">
+            <img src="your-image1.jpg" alt="Memory 1">
+            <img src="your-image2.jpg" alt="Memory 2">
+            <img src="your-image3.jpg" alt="Memory 3">
+            <img src="your-image4.jpg" alt="Memory 4">
+        </div>
+
+                <!-- Letter Section (Medieval Scroll Style) -->
+                <div class="letter">
+                    <h2>My Love Letter to You</h2>
+                    <div class="scroll">
+                        <p>
+                            My love,  
+                            <br><br>
+                            Every day with you feels like a beautiful adventure, but today, I just want to take a moment to remind you how incredibly special you are to me. Your love fills my heart in ways words can’t fully express, and I’m so grateful for every smile, every laugh, and every moment we share. I know i have not been the best boyfriend and haven't done as much as i should do but i want you to know i appreciate you and i love you very much  
+                            <br><br>
+                            You are my greatest joy, my best friend, and my forever love. No matter where life takes us, I will always choose you—again and again.
+                            <br><br>
+                            Happy Valentine’s Day, my love. Here’s to us, to our love, and to a lifetime of happiness together.
+                            <br><br>
+                            Forever yours,  
+                            <br>
+                            Nwokem
+                        </p>
+                    </div>
+                    <div class="wax-seal">
+                        <img src="https://i.imgur.com/RD7mCoV.png" alt="Wax Seal">
+
+                    </div>
+                </div>        
+
+        <div class="footer">
+            <p>Made with ❤️ for you</p>
+        </div>
+    </div>
+</body>
+</html>
